@@ -22,20 +22,18 @@
             width: 32%;
             padding-bottom: 32%;
             float: left;
-            margin-left: 2%;
         }
 
-        .squareFirst {
-            margin-left: 0;
+        div + div.square {
+            margin-left: 2%;
         }
 
         .row {
             clear: left;
-            margin-top: 2%;
         }
 
-        .row1 {
-            margin-top: 0;
+        div + div.row {
+            margin-top: 2%;
         }
 
         .row:after {
@@ -48,8 +46,8 @@
 <body>
 
 <div>
-    <div class="row1 row">
-        <div class="square squareFirst">
+    <div class="row">
+        <div class="square">
         </div>
         <div class="square">
         </div>
