@@ -7,15 +7,6 @@
 html, body {
     height: 100%;
     width: 100%;
-    overflow: hidden;
-    position:relative;
-}
-
-body > div {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    transform: translateY(-50%);
 }
 
 .square {
