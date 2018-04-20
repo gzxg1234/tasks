@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="task5.css"/>
+    <style type="text/css">
+        body {
+            background: white;
+        }
+
+        .header {
+            background: rgb(90, 192, 206);
+            line-height: 5em;
+            height: 5em;
+            position: absolute;
+            top: 0;
+            z-index: 5;
+            width: 100%;
+        }
+
+        .header > div {
+            float: left;
+            display: inline-block;
+        }
+
+        .header img {
+            vertical-align: middle;
+            transform: scale(0.6);
+        }
+
+        .title {
+            position: absolute;
+            width: 100%;
+            color: white;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .main {
+            position: absolute;
+            top: 5em;
+            bottom: 6em;
+            width: 100%;
+            overflow: auto;
+            z-index: 10;
+        }
+
+        .top {
+            height: 180px;
+            background: url('p2.png') center;
+            padding: 0 5% 0 5%;
+            display: flex;
+            align-items: center;
+        }
+
+        .head {
+            height: 80px;
+        }
+
+        .user_info {
+            color: white;
+            left: 90px;
+            margin-left: 2em;
+        }
+
+        .p1_ {
+            line-height: 5em;
+            height: 5em;
+        }
+
+        .p1_ p {
+            display: inline-block;
+            color: black;
+            margin: auto auto auto 1em;
+            padding-left: 1em;
+            line-height: normal;
+            vertical-align: middle;
+            border-left: 4px solid rgb(90, 192, 206);
+        }
+
+        .d1 {
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+
+        .row {
+            width: 100%;
+            padding: 1em;
+            display: flex;
+            align-items: center;
+        }
+
+        .row1 > img {
+            height: 1.2em;
+        }
+
+        .row1 > img:nth-of-type(2) {
+            margin-left: 1em;
+        }
+
+        .key {
+            flex-shrink: 0;
+            color: rgb(183, 183, 183);
+            padding-right: 1em;
+            margin-right: 1em;
+            border-right: 1px solid rgb(183, 183, 183);
+        }
+
+        .value {
+            flex-grow: 1;
+        }
+
+        .valueRed {
+            color: rgb(236, 160, 160);
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 6em;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .footer p {
+            display: inline-block;
+            height: 4em;
+            flex-basis: 45%;
+            line-height: 4em;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 5px;
+        }
+
+        .footer p:nth-child(1) {
+            border: 2px solid rgb(90, 192, 206);
+        }
+
+        .footer p:nth-child(2) {
+            background-color: rgb(90, 192, 206);
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div>
+        <img src="p1.png"/>
+    </div>
+    <p class="title">个人主页</p>
+</div>
+<div class="main">
+    <div class="top">
+        <img class="head" src="p3.png"/>
+        <div class="user_info">
+            <p style="font-size: 1.2em">许士林 55岁</p>
+            <p style="margin-top: 0.5em"><img src="p4.png" style="height: 1.2em;">京城，四方，宝芝灵</p>
+        </div>
+    </div>
+    <div class="p1_">
+        <p>专业技能</p>
+    </div>
+    <hr/>
+    <div class="d1">
+        <div class="row row1">
+            <img src="p5.png"/>
+            <p>住家</p>
+            <img src="p5.png"/>
+            <p>不含餐</p>
+        </div>
+        <hr/>
+        <div class="row">
+            <p class="key">从业年限</p>
+            <p class="value">0-3年</p>
+        </div>
+        <hr/>
+        <div class="row">
+            <p class="key">工作时间</p>
+            <p class="value">全天</p>
+        </div>
+        <hr/>
+        <div class="row">
+            <p class="key">服务价格</p>
+            <p class="value valueRed">25元/小时</p>
+        </div>
+        <hr/>
+        <div class="row">
+            <p class="key">自我介绍</p>
+            <p class="value">
+                自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍
+            </p>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <p>留言</p>
+    <p>电话联系</p>
+</div>
+</body>
+</html>
